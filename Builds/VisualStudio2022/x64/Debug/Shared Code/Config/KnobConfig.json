@@ -1,0 +1,10 @@
+{
+	// setTextBoxStyle
+	"textEntryBoxWidth" : 20,
+	"textEntryBoxHeight" : 10,
+	
+	// setVelocityModeParameter
+	"sensitivity" : 2.0,
+	"threshold"	: 1,
+	"offset" : 0.1,	
+}

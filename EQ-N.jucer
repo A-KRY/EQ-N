@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="H8uNw0" name="EQ-N" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              compilerFlagSchemes="">
+  <MAINGROUP id="Z3Z4kG" name="EQ-N">
+    <GROUP id="{2C303B62-8816-2A21-172A-2DC18096986E}" name="Source">
+      <GROUP id="{FA599B9A-061C-30E9-D194-8D687AC990B1}" name="FreqOscilloscope">
+        <FILE id="vB6TRE" name="FreqOscilloscope.cpp" compile="1" resource="0"
+              file="Source/FreqOscilloscope.cpp"/>
+        <FILE id="n3qJhD" name="FreqOscilloscope.h" compile="0" resource="0"
+              file="Source/FreqOscilloscope.h"/>
+      </GROUP>
+      <GROUP id="{E2D4DFAB-30BB-C3CC-79F8-5A612DC0EDB0}" name="BypassButton">
+        <FILE id="MzZF03" name="BypassButtonLookAndFeel.cpp" compile="1" resource="0"
+              file="Source/BypassButtonLookAndFeel.cpp"/>
+        <FILE id="RgRfzQ" name="BypassButtonLookAndFeel.h" compile="0" resource="0"
+              file="Source/BypassButtonLookAndFeel.h"/>
+      </GROUP>
+      <GROUP id="{3CA703D7-D207-244E-A09C-677055C8DBC6}" name="Convert">
+        <FILE id="Z3jCzZ" name="Convert.cpp" compile="1" resource="0" file="Source/Convert.cpp"/>
+        <FILE id="vpu07s" name="Convert.h" compile="0" resource="0" file="Source/Convert.h"/>
+      </GROUP>
+      <GROUP id="{4D446612-080E-C14C-7378-5503321E6E56}" name="Constant">
+        <FILE id="oQwtti" name="Constant.cpp" compile="1" resource="0" file="Source/Constant.cpp"/>
+        <FILE id="WWC4vd" name="Constant.h" compile="0" resource="0" file="Source/Constant.h"/>
+      </GROUP>
+      <GROUP id="{1AA69BEE-ECFA-052C-E04E-74B9C45C72C6}" name="FilterBank">
+        <FILE id="XFFaso" name="FilterBank.cpp" compile="1" resource="0" file="Source/FilterBank.cpp"/>
+        <FILE id="GAbYtd" name="FilterBank.h" compile="0" resource="0" file="Source/FilterBank.h"/>
+      </GROUP>
+      <GROUP id="{17AE0554-B4C4-98DD-656B-12AAC4B8D7DF}" name="FilterComponent">
+        <FILE id="xZmw2s" name="FilterComponent.cpp" compile="1" resource="0"
+              file="Source/FilterComponent.cpp"/>
+        <FILE id="gMtw1a" name="FilterComponent.h" compile="0" resource="0"
+              file="Source/FilterComponent.h"/>
+      </GROUP>
+      <GROUP id="{72BE1D42-4B08-1EDA-4EAF-BB29C8AC9F1C}" name="Knob">
+        <FILE id="yxHbQ2" name="Knob.cpp" compile="1" resource="0" file="Source/Knob.cpp"/>
+        <FILE id="mHCv5B" name="Knob.h" compile="0" resource="0" file="Source/Knob.h"/>
+        <FILE id="g0avtK" name="KnobLookAndFeel.cpp" compile="1" resource="0"
+              file="Source/KnobLookAndFeel.cpp"/>
+        <FILE id="m8p1KB" name="KnobLookAndFeel.h" compile="0" resource="0"
+              file="Source/KnobLookAndFeel.h"/>
+      </GROUP>
+      <FILE id="HEAIsE" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="Fa0avL" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="sQu5fM" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="XWuzc0" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="EQ-N"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="EQ-N"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="D:/Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="D:/Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="D:/Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="D:/Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="D:/Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="D:/Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="D:/Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="D:/Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="D:/Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="D:/Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="D:/Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="D:/Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="D:/Program Files/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
