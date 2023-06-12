@@ -66,9 +66,9 @@ public:
     // AudioProcessorParameterTree
     juce::AudioProcessorValueTreeState apvts;
 
-    void setEditor(EQNAudioProcessorEditor* editor)
+    FilterBank* getFilterBank()
     {
-        editorPtr = editor;
+        return &filterBank;
     }
 
 private:
@@ -76,8 +76,14 @@ private:
     // 创建参数
     juce::AudioProcessorValueTreeState::ParameterLayout createParameters();
 
-    // Editor 指针
-    EQNAudioProcessorEditor* editorPtr;
+    // FilterBank
+    FilterBank filterBank;
+
+#define SLIDER_ATTACHMENT juce::AudioProcessorValueTreeState::SliderAttachment
+    std::vector<std::shared_ptr<SLIDER_ATTACHMENT>> freqKnobAttachment, gainKnobAttachment, qualityKnobAttachment;
+#undef SLIDER_ATTACHMENT
+
+    void updateFilterCoefficients();
 
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (EQNAudioProcessor)

@@ -1,12 +1,22 @@
 g:\codes\juce\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n.pdb
 g:\codes\juce\eq-n\builds\visualstudio2022\x64\debug\vst3\include_juce_audio_plugin_client_vst3.obj
+g:\codes\juce\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n.lib
+g:\codes\juce\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n.exp
+g:\codes\juce\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n.vst3
+g:\codes\juce\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n.ilk
 g:\codes\juce\eq-n\builds\visualstudio2022\x64\debug\vst3\resources.res
-g:\codes\juce\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n_vst3.tlog\cl.command.1.tlog
-g:\codes\juce\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n_vst3.tlog\cl.read.1.tlog
-g:\codes\juce\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n_vst3.tlog\cl.write.1.tlog
-g:\codes\juce\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n_vst3.tlog\link.command.1.tlog
-g:\codes\juce\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n_vst3.tlog\link.read.1.tlog
-g:\codes\juce\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n_vst3.tlog\link.write.1.tlog
-g:\codes\juce\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n_vst3.tlog\rc.command.1.tlog
-g:\codes\juce\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n_vst3.tlog\rc.read.1.tlog
-g:\codes\juce\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n_vst3.tlog\rc.write.1.tlog
+h:\projects\visual studio\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n.ilk
+h:\projects\visual studio\eq-n\builds\visualstudio2022\x64\debug\vst3\resources.res
+h:\projects\visual studio\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n.exp
+h:\projects\visual studio\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n.pdb
+h:\projects\visual studio\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n.vst3
+h:\projects\visual studio\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n_vst3.tlog\cl.command.1.tlog
+h:\projects\visual studio\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n_vst3.tlog\cl.read.1.tlog
+h:\projects\visual studio\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n_vst3.tlog\cl.write.1.tlog
+h:\projects\visual studio\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n_vst3.tlog\link.command.1.tlog
+h:\projects\visual studio\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n_vst3.tlog\link.read.1.tlog
+h:\projects\visual studio\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n_vst3.tlog\link.write.1.tlog
+h:\projects\visual studio\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n_vst3.tlog\link.write.2u.tlog
+h:\projects\visual studio\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n_vst3.tlog\rc.command.1.tlog
+h:\projects\visual studio\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n_vst3.tlog\rc.read.1.tlog
+h:\projects\visual studio\eq-n\builds\visualstudio2022\x64\debug\vst3\eq-n_vst3.tlog\rc.write.1.tlog

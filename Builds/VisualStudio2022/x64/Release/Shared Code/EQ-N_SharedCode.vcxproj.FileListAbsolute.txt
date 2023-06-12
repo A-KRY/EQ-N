@@ -1,0 +1,1 @@
+H:\Projects\Visual Studio\EQ-N\Builds\VisualStudio2022\x64\Release\Shared Code\EQ-N.lib

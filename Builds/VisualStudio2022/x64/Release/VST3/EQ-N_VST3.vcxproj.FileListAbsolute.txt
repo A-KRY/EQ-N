@@ -1,0 +1,1 @@
+H:\Projects\Visual Studio\EQ-N\Builds\VisualStudio2022\x64\Release\VST3\EQ-N.vst3

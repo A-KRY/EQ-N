@@ -31,19 +31,7 @@ public:
     ~FilterComponent() override;
 
     void paint (juce::Graphics&) override;
-    void resized() override;
-
-    /*
-    // Factory Method
-    
-    static std::shared_ptr<FilterComponent> createShared(const int newOrder = 0);
-
-    static std::unique_ptr<FilterComponent> createUnique(const int newOrder = 0);
-
-    static juce::ReferenceCountedObjectPtr<FilterComponent> createReferenceCounted(const int newOrder = 0);
-    */
-
-    
+    void resized() override;    
 
     enum class FilterMode
     {
@@ -106,12 +94,6 @@ public:
 
     // 更新滤波器系数
     void updateCoefficients(const Settings& settings);
-
-    // 获得滤波器系数
-    decltype(auto) getCoefficients()
-    {
-        return std::move(filter[Convert::toUType(Channel::Left)].get<0>().coefficients);
-    }
 
 private:
 

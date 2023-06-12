@@ -19,9 +19,6 @@ Knob::Knob()
 
     setLookAndFeel(&knobLookAndFeel);
     setSliderStyle(RotaryHorizontalVerticalDrag);
-    /*setTextBoxStyle(TextBoxBelow, false, 
-        C(textEntryBoxWidth),
-        C(textEntryBoxHeight));*/
 
     setRotaryParameters(juce::MathConstants<float>::pi * 1.25f,
         juce::MathConstants<float>::pi * 2.75f, true);
@@ -45,6 +42,7 @@ Knob::Knob()
 
 Knob::~Knob()
 {
+    setLookAndFeel(nullptr);
 }
 
 void Knob::paint(juce::Graphics& g)

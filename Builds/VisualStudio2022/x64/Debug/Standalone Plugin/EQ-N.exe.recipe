@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>G:\Codes\JUCE\EQ-N\Builds\VisualStudio2022\x64\Debug\Standalone Plugin\EQ-N.exe</FullPath>
+      <FullPath>H:\Projects\Visual Studio\EQ-N\Builds\VisualStudio2022\x64\Debug\Standalone Plugin\EQ-N.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

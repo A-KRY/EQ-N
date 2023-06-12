@@ -44,6 +44,7 @@ FilterBank::~FilterBank()
 {
 }
 
+
 void FilterBank::paint (juce::Graphics& g)
 {
     /* This demo code just fills the component's background and

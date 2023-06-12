@@ -102,6 +102,7 @@ FilterComponent::FilterComponent(const int newOrder) :
 
 FilterComponent::~FilterComponent()
 {
+    bypassButton.setLookAndFeel(nullptr);
 }
 
 void FilterComponent::paint (juce::Graphics& g)
@@ -171,25 +172,6 @@ void FilterComponent::process(const juce::dsp::ProcessContextReplacing<float> co
     filter[Convert::toUType(Channel::Left)].process(context[Convert::toUType(Channel::Left)]);
     filter[Convert::toUType(Channel::Right)].process(context[Convert::toUType(Channel::Right)]);
 }
-
-
-/*
-std::shared_ptr<FilterComponent> FilterComponent::createShared(const int newOrder)
-{
-    return std::make_shared<FilterComponent>(newOrder);
-}
-
-std::unique_ptr<FilterComponent> FilterComponent::createUnique(const int newOrder)
-{
-    return std::make_unique<FilterComponent>(newOrder);
-}
-
-
-juce::ReferenceCountedObjectPtr<FilterComponent> FilterComponent::createReferenceCounted(const int newOrder)
-{
-    return { new FilterComponent(newOrder) };
-}
-*/
 
 
 void FilterComponent::setOrder(const int newOrder)

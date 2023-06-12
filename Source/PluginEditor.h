@@ -29,24 +29,18 @@ public:
     void paint (juce::Graphics&) override;
     void resized() override;
 
-    void updateFilterCoefficients();
+    // void updateFilterCoefficients();
 
-    void filterPrepare(const juce::dsp::ProcessSpec& spec);
+    // void filterPrepare(const juce::dsp::ProcessSpec& spec);
 
-    void filterProcess(const juce::dsp::ProcessContextReplacing<float> context[]);
+    // void filterProcess(const juce::dsp::ProcessContextReplacing<float> context[]);
 
 private:
     // This reference is provided as a quick way for your editor to
     // access the processor object that created it.
     EQNAudioProcessor& audioProcessor;
 
-    FilterBank filterBank;
-
-#define SLIDER_ATTACHMENT juce::AudioProcessorValueTreeState::SliderAttachment
-    std::vector<std::shared_ptr<SLIDER_ATTACHMENT>> freqKnobAttachment, gainKnobAttachment, qualityKnobAttachment;
-#undef SLIDER_ATTACHMENT
-
-    // std::vector<std::shared_ptr<juce::AudioProcessorValueTreeState::ComboBoxAttachment>> filterModeBoxAttachment;
+    FilterBank* filterBank;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (EQNAudioProcessorEditor)
 };

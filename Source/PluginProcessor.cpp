@@ -20,10 +20,20 @@ EQNAudioProcessor::EQNAudioProcessor()
         .withOutput("Output", juce::AudioChannelSet::stereo(), true)
 #endif
     ),
-    apvts(*this, nullptr, "ValueTreeState", createParameters()),
-    editorPtr(nullptr)
+    apvts(*this, nullptr, "ValueTreeState", createParameters())
 #endif
 {
+#define C(constant) Constant::PluginEditor::constant
+
+    for (auto i = 0; i < Constant::FilterBank::filterNumber; ++i)
+    {
+#define TYPE(type) FilterComponent::AttachmentType::type
+        freqKnobAttachment.emplace_back(filterBank.createSliderAttachment(i, apvts, juce::String(i) + "freq", TYPE(freqAttachment)));
+        gainKnobAttachment.emplace_back(filterBank.createSliderAttachment(i, apvts, juce::String(i) + "gain", TYPE(gainAttachment)));
+        qualityKnobAttachment.emplace_back(filterBank.createSliderAttachment(i, apvts, juce::String(i) + "quality", TYPE(qualityAttachment)));
+#undef TYPE
+    }
+
 }
 
 EQNAudioProcessor::~EQNAudioProcessor()
@@ -161,14 +171,11 @@ void EQNAudioProcessor::prepareToPlay (double sampleRate, int samplesPerBlock)
 {
     // Use this method as the place to do any pre-playback
     // initialisation that you need..
-    if (nullptr !=editorPtr)
-    {
-        editorPtr->updateFilterCoefficients();
+    updateFilterCoefficients();
 
-        juce::dsp::ProcessSpec spec{ sampleRate, static_cast<juce::uint32>(samplesPerBlock), 1 };
+    juce::dsp::ProcessSpec spec{ sampleRate, static_cast<juce::uint32>(samplesPerBlock), 1 };
 
-        editorPtr->filterPrepare(spec);
-    }
+    filterBank.prepare(spec);
 }
 
 void EQNAudioProcessor::releaseResources()
@@ -218,13 +225,10 @@ void EQNAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, juce::Mi
     for (auto i = totalNumInputChannels; i < totalNumOutputChannels; ++i)
         buffer.clear (i, 0, buffer.getNumSamples());
 
-    if (nullptr != editorPtr)
-    {
-        editorPtr->updateFilterCoefficients();
-        juce::dsp::AudioBlock<float> block(buffer);
-        juce::dsp::ProcessContextReplacing<float> context[2]{block.getSingleChannelBlock(LeftChannel), block.getSingleChannelBlock(RightChannel)};
-        editorPtr->filterProcess(context);
-    }
+    updateFilterCoefficients();
+    juce::dsp::AudioBlock<float> block(buffer);
+    juce::dsp::ProcessContextReplacing<float> context[2]{block.getSingleChannelBlock(LeftChannel), block.getSingleChannelBlock(RightChannel)};
+    filterBank.process(context);
 
     // This is the place where you'd normally do the guts of your plugin's
     // audio processing...
@@ -270,4 +274,17 @@ void EQNAudioProcessor::setStateInformation (const void* data, int sizeInBytes)
 juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter()
 {
     return new EQNAudioProcessor();
+}
+
+void EQNAudioProcessor::updateFilterCoefficients()
+{
+    FilterComponent::Settings newSetting;
+    newSetting.sampleRate = getSampleRate();
+    for (int i = 0; i < Constant::FilterBank::filterNumber; ++i)
+    {
+        newSetting.freq = Convert::fromNormalizedFreq(apvts.getRawParameterValue(juce::String(i) + "freq")->load());
+        newSetting.normalizedGain = Convert::toNormalizedGain(Convert::fromNormalizedFilterGain(apvts.getRawParameterValue(juce::String(i) + "gain")->load()));
+        newSetting.quality = Convert::fromNormalizedQuality(apvts.getRawParameterValue(juce::String(i) + "quality")->load());
+        filterBank.updateCoefficients(i, newSetting);
+    }
 }

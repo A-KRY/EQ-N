@@ -1,0 +1,19 @@
+﻿  PluginProcessor.cpp
+  PluginEditor.cpp
+H:\Projects\Visual Studio\EQ-N\Source\FilterComponent.h(79,22): warning C4996: 'juce::ComboBox::setSelectedId': 被声明为已否决 (编译源文件 ..\..\Source\PluginProcessor.cpp)
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(156,48): warning C4100: “index”: 未引用的形参
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(160,59): warning C4100: “index”: 未引用的形参
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(165,75): warning C4100: “newName”: 未引用的形参
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(165,48): warning C4100: “index”: 未引用的形参
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(230,141): warning C4239: 使用了非标准扩展:“参数”: 从“juce::dsp::AudioBlock<float>”转换到“juce::dsp::AudioBlock<float> &”
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(230,141): message : 非常量引用只能绑定到左值
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(213,91): warning C4100: “midiMessages”: 未引用的形参
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(241,15): warning C4189: “channelData”: 局部变量已初始化但不引用
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(259,65): warning C4100: “destData”: 未引用的形参
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(266,68): warning C4100: “sizeInBytes”: 未引用的形参
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(266,58): warning C4100: “data”: 未引用的形参
+H:\Projects\Visual Studio\EQ-N\Source\FilterComponent.h(79,22): warning C4996: 'juce::ComboBox::setSelectedId': 被声明为已否决 (编译源文件 ..\..\Source\PluginEditor.cpp)
+H:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.35.32215\include\memory(3393,56): warning C4244: “参数”: 从“const double”转换到“float”，可能丢失数据 (编译源文件 ..\..\Source\PluginProcessor.cpp)
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(67,13): message : 查看对正在编译的函数 模板 实例化“std::unique_ptr<juce::AudioParameterFloat,std::default_delete<juce::AudioParameterFloat>> std::make_unique<juce::AudioParameterFloat,juce::String,const char(&)[5],juce::NormalisableRange<float>,const double&,juce::String,juce::AudioProcessorParameter::Category,EQNAudioProcessor::createParameters::<lambda_3f55e4a3a4723008e73ff6ddf2096cbe>,EQNAudioProcessor::createParameters::<lambda_6f0b86eaabd5664eb7b01e021b177638>,0>(juce::String &&,const char (&)[5],juce::NormalisableRange<float> &&,const double &,juce::String &&,juce::AudioProcessorParameter::Category &&,EQNAudioProcessor::createParameters::<lambda_3f55e4a3a4723008e73ff6ddf2096cbe> &&,EQNAudioProcessor::createParameters::<lambda_6f0b86eaabd5664eb7b01e021b177638> &&)”的引用
+H:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): warning C4996: 'juce::AudioParameterFloat::AudioParameterFloat': Prefer the signature taking an Attributes argument (编译源文件 ..\..\Source\PluginProcessor.cpp)
+  EQ-N_SharedCode.vcxproj -> H:\Projects\Visual Studio\EQ-N\Builds\VisualStudio2022\x64\Release\Shared Code\EQ-N.lib

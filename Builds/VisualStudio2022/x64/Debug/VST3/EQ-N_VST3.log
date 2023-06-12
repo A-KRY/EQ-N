@@ -1,1 +1,3 @@
-﻿  EQ-N_VST3.vcxproj -> G:\Codes\JUCE\EQ-N\Builds\VisualStudio2022\x64\Debug\VST3\EQ-N.vst3
+﻿  include_juce_audio_plugin_client_VST3.cpp
+    正在创建库 H:\Projects\Visual Studio\EQ-N\Builds\VisualStudio2022\x64\Debug\VST3\EQ-N.lib 和对象 H:\Projects\Visual Studio\EQ-N\Builds\VisualStudio2022\x64\Debug\VST3\EQ-N.exp
+  EQ-N_VST3.vcxproj -> H:\Projects\Visual Studio\EQ-N\Builds\VisualStudio2022\x64\Debug\VST3\EQ-N.vst3

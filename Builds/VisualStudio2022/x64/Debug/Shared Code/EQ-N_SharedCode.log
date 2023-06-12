@@ -1,2 +1,57 @@
-﻿  Convert.cpp
-  EQ-N_SharedCode.vcxproj -> G:\Codes\JUCE\EQ-N\Builds\VisualStudio2022\x64\Debug\Shared Code\EQ-N.lib
+﻿  BypassButtonLookAndFeel.cpp
+  Convert.cpp
+  Constant.cpp
+  FilterBank.cpp
+  FilterComponent.cpp
+  Knob.cpp
+  KnobLookAndFeel.cpp
+  PluginProcessor.cpp
+  PluginEditor.cpp
+  include_juce_audio_basics.cpp
+  include_juce_audio_devices.cpp
+  include_juce_audio_formats.cpp
+  include_juce_audio_plugin_client_ARA.cpp
+  include_juce_audio_plugin_client_utils.cpp
+  include_juce_audio_processors_ara.cpp
+  include_juce_audio_processors_lv2_libs.cpp
+  include_juce_audio_utils.cpp
+  include_juce_core.cpp
+  include_juce_data_structures.cpp
+  include_juce_dsp.cpp
+  include_juce_events.cpp
+H:\Projects\Visual Studio\EQ-N\Source\FilterComponent.h(79,22): warning C4996: 'juce::ComboBox::setSelectedId': 被声明为已否决 (编译源文件 ..\..\Source\PluginProcessor.cpp)
+H:\Projects\Visual Studio\EQ-N\Source\FilterComponent.h(79,22): warning C4996: 'juce::ComboBox::setSelectedId': 被声明为已否决 (编译源文件 ..\..\Source\FilterBank.cpp)
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(146,48): warning C4100: “index”: 未引用的形参
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(150,59): warning C4100: “index”: 未引用的形参
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(155,75): warning C4100: “newName”: 未引用的形参
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(155,48): warning C4100: “index”: 未引用的形参
+H:\Projects\Visual Studio\EQ-N\Source\KnobLookAndFeel.cpp(31,110): warning C4244: “参数”: 从“double”转换到“ValueType”，可能丢失数据
+          with
+          [
+              ValueType=int
+          ]
+H:\Projects\Visual Studio\EQ-N\Source\KnobLookAndFeel.cpp(32,82): warning C4244: “参数”: 从“double”转换到“ValueType”，可能丢失数据
+          with
+          [
+              ValueType=int
+          ]
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(225,145): warning C4239: 使用了非标准扩展:“参数”: 从“juce::dsp::AudioBlock<float>”转换到“juce::dsp::AudioBlock<float> &”
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(225,145): message : 非常量引用只能绑定到左值
+H:\Projects\Visual Studio\EQ-N\Source\KnobLookAndFeel.cpp(52,28): warning C4244: “参数”: 从“const double”转换到“float”，可能丢失数据
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(206,91): warning C4100: “midiMessages”: 未引用的形参
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(237,15): warning C4189: “channelData”: 局部变量已初始化但不引用
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(255,65): warning C4100: “destData”: 未引用的形参
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(262,68): warning C4100: “sizeInBytes”: 未引用的形参
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(262,58): warning C4100: “data”: 未引用的形参
+H:\Projects\Visual Studio\EQ-N\Source\FilterComponent.h(79,22): warning C4996: 'juce::ComboBox::setSelectedId': 被声明为已否决 (编译源文件 ..\..\Source\FilterComponent.cpp)
+H:\Projects\Visual Studio\EQ-N\Source\Knob.cpp(27,10): warning C4244: “参数”: 从“const double”转换到“int”，可能丢失数据
+H:\Projects\Visual Studio\EQ-N\Source\FilterComponent.h(79,22): warning C4996: 'juce::ComboBox::setSelectedId': 被声明为已否决 (编译源文件 ..\..\Source\PluginEditor.cpp)
+H:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.35.32215\include\memory(3393,56): warning C4244: “参数”: 从“const double”转换到“float”，可能丢失数据 (编译源文件 ..\..\Source\PluginProcessor.cpp)
+H:\Projects\Visual Studio\EQ-N\Source\PluginProcessor.cpp(57,13): message : 查看对正在编译的函数 模板 实例化“std::unique_ptr<juce::AudioParameterFloat,std::default_delete<juce::AudioParameterFloat>> std::make_unique<juce::AudioParameterFloat,juce::String,const char(&)[5],juce::NormalisableRange<float>,const double&,juce::String,juce::AudioProcessorParameter::Category,EQNAudioProcessor::createParameters::<lambda_3f55e4a3a4723008e73ff6ddf2096cbe>,EQNAudioProcessor::createParameters::<lambda_6f0b86eaabd5664eb7b01e021b177638>,0>(juce::String &&,const char (&)[5],juce::NormalisableRange<float> &&,const double &,juce::String &&,juce::AudioProcessorParameter::Category &&,EQNAudioProcessor::createParameters::<lambda_3f55e4a3a4723008e73ff6ddf2096cbe> &&,EQNAudioProcessor::createParameters::<lambda_6f0b86eaabd5664eb7b01e021b177638> &&)”的引用
+H:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): warning C4996: 'juce::AudioParameterFloat::AudioParameterFloat': Prefer the signature taking an Attributes argument (编译源文件 ..\..\Source\PluginProcessor.cpp)
+  include_juce_graphics.cpp
+  include_juce_gui_extra.cpp
+D:\Program Files\JUCE\modules\juce_core\text\juce_CharacterFunctions.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 ..\..\JuceLibraryCode\include_juce_core.cpp)
+  include_juce_audio_processors.cpp
+  include_juce_gui_basics.cpp
+  EQ-N_SharedCode.vcxproj -> H:\Projects\Visual Studio\EQ-N\Builds\VisualStudio2022\x64\Debug\Shared Code\EQ-N.lib

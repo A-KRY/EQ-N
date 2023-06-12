@@ -1,1 +1,2 @@
-﻿  EQ-N_StandalonePlugin.vcxproj -> G:\Codes\JUCE\EQ-N\Builds\VisualStudio2022\x64\Debug\Standalone Plugin\EQ-N.exe
+﻿  include_juce_audio_plugin_client_Standalone.cpp
+  EQ-N_StandalonePlugin.vcxproj -> H:\Projects\Visual Studio\EQ-N\Builds\VisualStudio2022\x64\Debug\Standalone Plugin\EQ-N.exe

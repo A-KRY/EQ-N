@@ -1,1 +1,2 @@
 G:\Codes\JUCE\EQ-N\Builds\VisualStudio2022\x64\Debug\Shared Code\EQ-N.lib
+H:\Projects\Visual Studio\EQ-N\Builds\VisualStudio2022\x64\Debug\Shared Code\EQ-N.lib
